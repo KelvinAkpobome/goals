@@ -21,8 +21,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASS}}
           script: |
-            apt-get install node
-            apt-get install npm
+            apt-get install node -y
+            apt-get install npm -y
+            apt-get install yarn -y
             cd goals/
             git pull
             cd client/
