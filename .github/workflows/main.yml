@@ -26,7 +26,8 @@ jobs:
             apt-get install yarn -y
             git clone https://github.com/KelvinAkpobome/goals.git
             ls -la
+            npm install
             cd goals/
             cd client/
-            yarn install
-            yarn build
+            npm install
+            npm build
