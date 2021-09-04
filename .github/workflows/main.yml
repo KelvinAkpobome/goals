@@ -21,7 +21,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASS}}
           script: |
-            cd zc_plugin_company_goals/
+            apt-get install node
+            apt-get install npm
+            cd goals/
             git pull
             cd client/
             yarn install
