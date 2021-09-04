@@ -24,9 +24,9 @@ jobs:
             apt-get install nodejs -y
             apt-get install npm -y
             apt-get install yarn -y
+            git clone https://github.com/KelvinAkpobome/goals.git
             ls -la
             cd goals/
-            git pull
             cd client/
             yarn install
             yarn build
